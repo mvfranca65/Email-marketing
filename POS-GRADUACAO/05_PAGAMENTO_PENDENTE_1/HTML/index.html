@@ -89,7 +89,10 @@
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -101,7 +104,7 @@
             font-family: '$poppins-bold';
             src: url('./fonts/Poppins-Bold.ttf');
         }
-        
+
         @font-face {
             font-family: '$popis-regular';
             src: url('./fonts/Poppins-Regular.ttf');
@@ -124,7 +127,7 @@
 
         h2 {
             font-size: 24px;
-            font-family: '$poppins-bold'; 
+            font-family: '$poppins-bold';
         }
 
         h3 {
@@ -143,34 +146,34 @@
         }
 
         .body {
-            margin: 0; 
-            padding: 0 !important; 
+            margin: 0;
+            padding: 0 !important;
             mso-line-height-rule: exactly;
         }
 
         .container {
-            width: 100%; 
+            width: 100%;
             background-color: #f1f4fa;
         }
-        
+
         .email-content {
-            max-width: 850px; 
+            max-width: 850px;
             margin: 0 auto;
         }
 
         .table {
-            margin: auto; 
+            margin: auto;
             background-color: #ffffff;
         }
 
         .button {
-            background-color: #7f00ff; 
-            color: #ffffff; 
-            border: none; 
-            border-radius: 4px; 
-            width: 80%; 
-            height: 65px; 
-            margin-top: 20px; 
+            background-color: #7f00ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            width: 80%;
+            height: 65px;
+            margin-top: 20px;
             font-family: '$poppins-bold';
             font-size: 20px;
             display: flex;
@@ -204,25 +207,38 @@
 <body width="100%" class="body">
     <center class="container">
         <div class="email-content">
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="table">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                class="table">
                 <tr>
                     <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header" style="width: 100%; object-fit: cover; object-position: bottom;">
-                    </td>
-                </tr>
-                <tr >
-                    <td class="width-td">
-                        <center><h1 style="margin-top: 35px;">Olá, *|NOME|*</h1></center>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="width-td">
-                        <center><h2 style="margin-top: 35px; line-height: 45px;">Agora estamos mais próximos do que nunca, sua jornada em busca de sua constante evolução está a poucos cliques.</h2></center><br>
+                        <a href="https://auden.edu.br/index" target="_blank">
+                            <img src="../DEV/HEADER.png" alt="header"
+                                style="width: 100%; object-fit: cover; object-position: bottom;">
+                        </a>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="line-height: 45px;">Para garantir a sua vaga na Faculdade AUDEN MFA, você deve efetuar o pagamento de sua matrícula. O processo é simplificado e ágil, sendo assim, você pode conclui-lo agora mesmo.</p></center><br>
+                        <center>
+                            <h1 style="margin-top: 35px;">Olá, *|NOME|*</h1>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <h2 style="margin-top: 35px; line-height: 45px;">Agora estamos mais próximos do que nunca,
+                                sua jornada em busca de sua constante evolução está a poucos cliques.</h2>
+                        </center><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <p style="line-height: 45px;">Para garantir a sua vaga na Faculdade AUDEN MFA, você deve
+                                efetuar o pagamento de sua matrícula. O processo é simplificado e ágil, sendo assim,
+                                você pode conclui-lo agora mesmo.</p>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
@@ -234,7 +250,9 @@
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 35px; line-height: 45px;">
-                                Para facilitar o seu pagamento, disponibilizaremos o código do boleto a seguir. Assim, você poderá efetuar o pagamento pela plataforma de sua preferência. <br> *|CODIGO_BOLETO|*                                
+                                Para facilitar o seu pagamento, disponibilizaremos o código do boleto a seguir. Assim,
+                                você poderá efetuar o pagamento pela plataforma de sua preferência. <br>
+                                *|CODIGO_BOLETO|*
                             </p>
                         </center>
                     </td>
@@ -250,7 +268,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="../DEV/FOOTER.png" alt="footer" style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        <a href="https://linktr.ee/audenmfa" target="_blank">
+                            <img src="../DEV/FOOTER.png" alt="footer"
+                                style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        </a>
                     </td>
                 </tr>
             </table>

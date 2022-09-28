@@ -89,7 +89,10 @@
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -101,7 +104,7 @@
             font-family: '$poppins-bold';
             src: url('./fonts/Poppins-Bold.ttf');
         }
-        
+
         @font-face {
             font-family: '$popis-regular';
             src: url('./fonts/Poppins-Regular.ttf');
@@ -123,7 +126,7 @@
 
         h2 {
             font-size: 24px;
-            font-family: '$poppins-bold'; 
+            font-family: '$poppins-bold';
         }
 
         h3 {
@@ -136,23 +139,23 @@
         }
 
         .body {
-            margin: 0; 
-            padding: 0 !important; 
+            margin: 0;
+            padding: 0 !important;
             mso-line-height-rule: exactly;
         }
 
         .container {
-            width: 100%; 
+            width: 100%;
             background-color: #f1f4fa;
         }
-        
+
         .email-content {
-            max-width: 850px; 
+            max-width: 850px;
             margin: 0 auto;
         }
 
         .table {
-            margin: auto; 
+            margin: auto;
             background-color: #ffffff;
         }
 
@@ -164,11 +167,11 @@
         }
 
         .button {
-            border: none; 
-            border-radius: 4px; 
-            width: 47%; 
-            height: 65px; 
-            margin-top: 25px; 
+            border: none;
+            border-radius: 4px;
+            width: 47%;
+            height: 65px;
+            margin-top: 25px;
             font-family: '$poppins-bold';
             font-size: 20px;
             display: flex;
@@ -177,18 +180,18 @@
         }
 
         .button-matricula {
-            background-color: #7f00ff; 
-            color: #ffffff; 
+            background-color: #7f00ff;
+            color: #ffffff;
         }
 
         .button-graduacao {
-            background-color: #a3a3a3; 
-            color: #ffffff; 
+            background-color: #a3a3a3;
+            color: #ffffff;
         }
 
         @media only screen and (min-device-width: 250px) and (max-device-width: 319px) {
             .button {
-                width: 100%; 
+                width: 100%;
                 margin: auto;
                 font-size: 16px;
             }
@@ -207,10 +210,11 @@
 
         @media only screen and (min-device-width: 320px) and (max-device-width: 420px) {
             .button {
-                width: 100%; 
+                width: 100%;
                 margin: auto;
                 font-size: 16px;
             }
+
             .button-container {
                 display: flex;
                 flex-direction: column;
@@ -225,7 +229,7 @@
 
         @media only screen and (min-device-width: 421px) and (max-device-width: 600px) {
             .button {
-                width: 100%; 
+                width: 100%;
                 margin: auto;
                 font-size: 16px;
             }
@@ -247,53 +251,85 @@
 <body width="100%" class="body">
     <center class="container">
         <div class="email-content">
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="table">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                class="table">
                 <tr>
                     <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header" style="width: 100%; object-fit: cover; object-position: bottom;">
-                    </td>
-                </tr>
-                <tr >
-                    <td class="width-td">
-                        <center><h3 style="margin-top: 35px; line-height: 45px">Olá, *|NOME|*</h3></center>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="width-td">
-                        <center><h2 style="margin-top: 35px; line-height: 45px;">Chegou seu momento de encarar o próximo nível e evoluir sua carreira.</h2></center><br>
+                        <a href="https://auden.edu.br/index" target="_blank">
+                            <img src="../DEV/HEADER.png" alt="header"
+                                style="width: 100%; object-fit: cover; object-position: bottom;">
+                        </a>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="margin-top: 10px; line-height: 45px;"><strong>Já imaginou em estar dentre ao próximo nível de sua carreira por meio de uma Pós–Graduação 100% digital avaliada pelo MEC – Ministério da Educação com nota máxima? A faculdade AUDEN MFA está presente entre as mais bem avaliadas de todo Brasil. Isso tudo, ao seu alcance.</strong></p></center><br>
+                        <center>
+                            <h3 style="margin-top: 35px; line-height: 45px">Olá, *|NOME|*</h3>
+                        </center>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="margin-top: 10px; line-height: 45px;">Aproveite sua única oportunidade de tornar-se o diferencial no mercado de trabalho. A faculdade AUDEN MFA é a primeira Instituição de Ensino Superior 100% digital do Brasil, mais do que isso, é uma nova consciência de desenvolvimento humano feita para inovar e acoplar flexibilidade de estudar de onde e quando quiser.</p></center><br>
+                        <center>
+                            <h2 style="margin-top: 35px; line-height: 45px;">Chegou seu momento de encarar o próximo
+                                nível e evoluir sua carreira.</h2>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="margin-top: 15px; line-height: 45px;"><strong>O seu próximo passo é escolher qual Pós–Graduação vamos começar.</strong></p></center><br>
+                        <center>
+                            <p style="margin-top: 10px; line-height: 45px;"><strong>Já imaginou em estar dentre ao
+                                    próximo nível de sua carreira por meio de uma Pós–Graduação 100% digital avaliada
+                                    pelo MEC – Ministério da Educação com nota máxima? A faculdade AUDEN MFA está
+                                    presente entre as mais bem avaliadas de todo Brasil. Isso tudo, ao seu
+                                    alcance.</strong></p>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="margin-top: 5px; line-height: 45px;"><strong>Escolha sua Pós–Graduação nas áreas de Gestão, Saúde e Educação e estude investindo apenas 12 parcelas de R$89,00.</strong></p></center><br>
+                        <center>
+                            <p style="margin-top: 10px; line-height: 45px;">Aproveite sua única oportunidade de
+                                tornar-se o diferencial no mercado de trabalho. A faculdade AUDEN MFA é a primeira
+                                Instituição de Ensino Superior 100% digital do Brasil, mais do que isso, é uma nova
+                                consciência de desenvolvimento humano feita para inovar e acoplar flexibilidade de
+                                estudar de onde e quando quiser.</p>
+                        </center><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <p style="margin-top: 15px; line-height: 45px;"><strong>O seu próximo passo é escolher qual
+                                    Pós–Graduação vamos começar.</strong></p>
+                        </center><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <p style="margin-top: 5px; line-height: 45px;"><strong>Escolha sua Pós–Graduação nas áreas
+                                    de Gestão, Saúde e Educação e estude investindo apenas 12 parcelas de
+                                    R$89,00.</strong></p>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div class="button-container">
-                            <button class="button btn-buscar button-graduacao" id="button_buscar">BUSCAR PÓS–GRADUAÇÃO</button>
+                            <button class="button btn-buscar button-graduacao" id="button_buscar">BUSCAR
+                                PÓS–GRADUAÇÃO</button>
                             <button class="button button-matricula" id="button_matricule">MATRICULE-SE</button>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../DEV/FOOTER.png" alt="footer" style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 45px; display: flex;">
+                        <a href="https://linktr.ee/audenmfa" target="_blank">
+                            <img src="../DEV/FOOTER.png" alt="footer"
+                                style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 45px; display: flex;">
+                        </a>
                     </td>
                 </tr>
             </table>

@@ -89,7 +89,10 @@
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -101,7 +104,7 @@
             font-family: '$poppins-bold';
             src: url('./fonts/Poppins-Bold.ttf');
         }
-        
+
         @font-face {
             font-family: '$popis-regular';
             src: url('./fonts/Poppins-Regular.ttf');
@@ -122,7 +125,7 @@
             font-weight: 700;
         }
 
-        
+
         h2 {
             font-size: 24px;
             font-family: '$poppins-bold';
@@ -138,31 +141,31 @@
         }
 
         .body {
-            margin: 0; 
-            padding: 0 !important; 
+            margin: 0;
+            padding: 0 !important;
             mso-line-height-rule: exactly;
         }
 
         .container {
-            width: 100%; 
+            width: 100%;
             background-color: #f1f4fa;
         }
-        
+
         .email-content {
-            max-width: 850px; 
+            max-width: 850px;
             margin: 0 auto;
         }
 
         .table {
-            margin: auto; 
+            margin: auto;
             background-color: #ffffff;
         }
 
         .button {
-            width: 100%; 
-            object-fit: cover; 
-            object-position: bottom; 
-            margin: 50px auto 0; 
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            margin: 50px auto 0;
             display: flex;
         }
 
@@ -189,43 +192,59 @@
 <body width="100%" class="body">
     <center class="container">
         <div class="email-content">
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="table">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                class="table">
                 <tr>
                     <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header" style="width: 100%; object-fit: cover; object-position: bottom;">
+                        <a href="https://auden.edu.br/index" target="_blank">
+                            <img src="../DEV/HEADER.png" alt="header"
+                                style="width: 100%; object-fit: cover; object-position: bottom;">
+                        </a>
                     </td>
                 </tr>
-                <tr >
+                <tr>
                     <td class="width-td">
-                        <center><h1 style="margin-top: 35px;">Olá, *|NOME|*</h1></center>
+                        <center>
+                            <h1 style="margin-top: 35px;">Olá, *|NOME|*</h1>
+                        </center>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
                         <center>
                             <h2 style="margin-top: 30px; line-height: 45px;">
-                                <strong>A notícia que você tanto esperava finalmente chegou. <br> Parabéns, você foi aprovado(a) para sua Pós–Graduação *|NOME_CURSO|*.</strong>
+                                <strong>A notícia que você tanto esperava finalmente chegou. <br> Parabéns, você foi
+                                    aprovado(a) para sua Pós–Graduação *|NOME_CURSO|*.</strong>
                             </h2>
                         </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="margin-top: 12px; line-height: 45px;">Sua evolução começa agora, o primeiro gigante passo para seu próximo ciclo já está garantido *|PRIMEIRO_NOME|*. Estamos muito felizes em fazer parte disso, será incrível buscar com você tamanha evolução com excelência para prepará-lo.</p></center><br>
+                        <center>
+                            <p style="margin-top: 12px; line-height: 45px;">Sua evolução começa agora, o primeiro
+                                gigante passo para seu próximo ciclo já está garantido *|PRIMEIRO_NOME|*. Estamos muito
+                                felizes em fazer parte disso, será incrível buscar com você tamanha evolução com
+                                excelência para prepará-lo.</p>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 10px; line-height: 45px;">
-                                <strong>O mercado valoriza ainda mais ações de quem se prepara, juntos somos constante evolução, juntos somos Faculdade AUDEN MFA.</strong>
+                                <strong>O mercado valoriza ainda mais ações de quem se prepara, juntos somos constante
+                                    evolução, juntos somos Faculdade AUDEN MFA.</strong>
                             </p>
                         </center>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../DEV/FOOTER.png" alt="footer" style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        <a href="https://linktr.ee/audenmfa" target="_blank">
+                            <img src="../DEV/FOOTER.png" alt="footer"
+                                style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        </a>
                     </td>
                 </tr>
             </table>

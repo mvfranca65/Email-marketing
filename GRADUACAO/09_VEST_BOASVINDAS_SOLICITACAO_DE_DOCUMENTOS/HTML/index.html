@@ -89,7 +89,10 @@
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -101,7 +104,7 @@
             font-family: '$poppins-bold';
             src: url('./fonts/Poppins-Bold.ttf');
         }
-        
+
         @font-face {
             font-family: '$popis-regular';
             src: url('./fonts/Poppins-Regular.ttf');
@@ -133,7 +136,7 @@
 
         h4 {
             font-size: 24px;
-            font-family: '$poppins-bold'; 
+            font-family: '$poppins-bold';
         }
 
         .width-td {
@@ -147,41 +150,41 @@
         }
 
         .body {
-            margin: 0; 
-            padding: 0 !important; 
+            margin: 0;
+            padding: 0 !important;
             mso-line-height-rule: exactly;
         }
 
         .container {
-            width: 100%; 
+            width: 100%;
             background-color: #f1f4fa;
         }
-        
+
         .email-content {
-            max-width: 850px; 
+            max-width: 850px;
             margin: 0 auto;
         }
 
         .table {
-            margin: auto; 
+            margin: auto;
             background-color: #ffffff;
         }
 
         .banner {
-            width: 100%; 
-            object-fit: cover; 
-            object-position: bottom; 
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
             position: relative;
         }
 
         .button {
-            background-color: #7f00ff; 
-            color: #ffffff; 
-            border: none; 
-            border-radius: 4px; 
-            width: 80%; 
-            height: 65px; 
-            margin-top: 30px; 
+            background-color: #7f00ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            width: 80%;
+            height: 65px;
+            margin-top: 30px;
             font-family: '$poppins-bold';
             font-size: 20px;
             display: flex;
@@ -215,10 +218,14 @@
 <body width="100%" class="body">
     <center class="container">
         <div class="email-content">
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="table">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                class="table">
                 <tr>
                     <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header" style="width: 100%; object-fit: cover; object-position: bottom;">
+                        <a href="https://auden.edu.br/index" target="_blank">
+                            <img src="../DEV/HEADER.png" alt="header"
+                                style="width: 100%; object-fit: cover; object-position: bottom;">
+                        </a>
                     </td>
                 </tr>
                 <tr>
@@ -231,27 +238,36 @@
                 <tr>
                     <td class="width-td">
                         <center>
-                            <h2 style="margin-top: 12px; font-weight: 700;"><strong>Sua Graduação *|NOME_CURSO|* já está quase pronta.</strong></h2>
+                            <h2 style="margin-top: 12px; font-weight: 700;"><strong>Sua Graduação *|NOME_CURSO|* já está
+                                    quase pronta.</strong></h2>
                         </center>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><h3 style="margin-top: 32px; font-weight: 700;">*|PRIMEIRO_NOME|*</h3></center>
+                        <center>
+                            <h3 style="margin-top: 32px; font-weight: 700;">*|PRIMEIRO_NOME|*</h3>
+                        </center>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 30px; line-height: 45px;">
-                                Para nós é uma grande felicidade ter você em nossa Faculdade. A partir de agora, vamos acompanhar todos os seus progressos em busca de seu futuro promissor.
+                                Para nós é uma grande felicidade ter você em nossa Faculdade. A partir de agora, vamos
+                                acompanhar todos os seus progressos em busca de seu futuro promissor.
                             </p>
                         </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><p style="margin: 8px 0 25px 0; line-height: 45px;">Gostaríamos de dizer que, até agora, tudo se encontra em perfeito funcionamento para seu processo seletivo, mas vamos precisar de uma ajuda sua. Para finalizarmos o processo integral de matrícula precisamos dos seguintes documentos:</p></center><br>
+                        <center>
+                            <p style="margin: 8px 0 25px 0; line-height: 45px;">Gostaríamos de dizer que, até agora,
+                                tudo se encontra em perfeito funcionamento para seu processo seletivo, mas vamos
+                                precisar de uma ajuda sua. Para finalizarmos o processo integral de matrícula precisamos
+                                dos seguintes documentos:</p>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
@@ -263,7 +279,8 @@
                     <td class="width-td">
                         <center>
                             <h4 style="margin-top: 40px; line-height: 45px;">
-                               Este é o último passo para concluir seu processo e se tornar um universitário na Faculdade AUDEN MFA.
+                                Este é o último passo para concluir seu processo e se tornar um universitário na
+                                Faculdade AUDEN MFA.
                             </h4>
                         </center>
                     </td>
@@ -277,14 +294,17 @@
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 35px; line-height: 45px;">
-                               <strong>Faculdade AUDEN MFA, seu futuro em poucos cliques.</strong>
+                                <strong>Faculdade AUDEN MFA, seu futuro em poucos cliques.</strong>
                             </p>
                         </center>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../DEV/FOOTER.png" alt="footer" style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        <a href="https://linktr.ee/audenmfa" target="_blank">
+                            <img src="../DEV/FOOTER.png" alt="footer"
+                                style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        </a>
                     </td>
                 </tr>
             </table>

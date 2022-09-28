@@ -89,7 +89,10 @@
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -101,7 +104,7 @@
             font-family: '$poppins-bold';
             src: url('./fonts/Poppins-Bold.ttf');
         }
-        
+
         @font-face {
             font-family: '$popis-regular';
             src: url('./fonts/Poppins-Regular.ttf');
@@ -152,34 +155,34 @@
         }
 
         .body {
-            margin: 0; 
-            padding: 0 !important; 
+            margin: 0;
+            padding: 0 !important;
             mso-line-height-rule: exactly;
         }
 
         .container {
-            width: 100%; 
+            width: 100%;
             background-color: #f1f4fa;
         }
-        
+
         .email-content {
-            max-width: 850px; 
+            max-width: 850px;
             margin: 0 auto;
         }
 
         .table {
-            margin: auto; 
+            margin: auto;
             background-color: #ffffff;
         }
 
         .button {
-            background-color: #7f00ff; 
-            color: #ffffff; 
-            border: none; 
-            border-radius: 4px; 
-            width: 80%; 
-            height: 65px; 
-            margin-top: 25px; 
+            background-color: #7f00ff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            width: 80%;
+            height: 65px;
+            margin-top: 25px;
             font-family: '$poppins-bold';
             font-size: 20px;
             display: flex;
@@ -213,21 +216,28 @@
 <body width="100%" class="body">
     <center class="container">
         <div class="email-content">
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="table">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                class="table">
                 <tr>
                     <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header" style="width: 100%; object-fit: cover; object-position: bottom;">
-                    </td>
-                </tr>
-                <tr >
-                    <td class="width-td">
-                        <center><h3 style="margin-top: 35px; line-height: 45px;">Olá, *|NOME|*</h3></center>
+                        <a href="https://auden.edu.br/index" target="_blank">
+                            <img src="../DEV/HEADER.png" alt="header"
+                                style="width: 100%; object-fit: cover; object-position: bottom;">
+                        </a>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
                         <center>
-                            <h2 style="margin-top: 35px; line-height: 45px;">Estamos orgulhosos de você chegar ao final de seu ciclo, buscando assim constância de evolução integra.</h2>
+                            <h3 style="margin-top: 35px; line-height: 45px;">Olá, *|NOME|*</h3>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <h2 style="margin-top: 35px; line-height: 45px;">Estamos orgulhosos de você chegar ao final
+                                de seu ciclo, buscando assim constância de evolução integra.</h2>
                         </center><br>
                     </td>
                 </tr>
@@ -235,7 +245,8 @@
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 20px; line-height: 45px;">
-                                O motivo de nosso contato é referente a pendências que constam em nosso sistema operacional, isso poderá refletir diretamente ao fechamento de seu ciclo.
+                                O motivo de nosso contato é referente a pendências que constam em nosso sistema
+                                operacional, isso poderá refletir diretamente ao fechamento de seu ciclo.
                             </p>
                         </center><br>
                     </td>
@@ -261,7 +272,9 @@
                     <td class="width-td">
                         <center>
                             <p class="label" style="margin-top: 35px; line-height: 45px;">
-                                *É de extrema importância que haja o contato direto ao atendimento especializado, assim, poderemos orienta-lo(a) todas diretrizes de encerramento de seu ciclo, <strong> não deixe para depois. </strong>
+                                *É de extrema importância que haja o contato direto ao atendimento especializado, assim,
+                                poderemos orienta-lo(a) todas diretrizes de encerramento de seu ciclo, <strong> não
+                                    deixe para depois. </strong>
                             </p>
                         </center>
                     </td>
@@ -270,14 +283,18 @@
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 30px; line-height: 45px;">
-                                Caso não houver qualquer pendência sobre tarefas, mensalidades ou documentações favor desconsiderar este e-mail.
+                                Caso não houver qualquer pendência sobre tarefas, mensalidades ou documentações favor
+                                desconsiderar este e-mail.
                             </p>
                         </center>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../DEV/FOOTER.png" alt="footer" style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        <a href="https://linktr.ee/audenmfa" target="_blank">
+                            <img src="../DEV/FOOTER.png" alt="footer"
+                                style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        </a>
                     </td>
                 </tr>
             </table>

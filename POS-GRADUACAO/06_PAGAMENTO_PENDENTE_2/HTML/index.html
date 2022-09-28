@@ -89,7 +89,10 @@
         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
         /* Create one of these media queries for each additional viewport size you'd like to fix */
 
-        h1, h2, h3, p {
+        h1,
+        h2,
+        h3,
+        p {
             margin: 0;
             padding: 0;
         }
@@ -101,7 +104,7 @@
             font-family: '$poppins-bold';
             src: url('./fonts/Poppins-Bold.ttf');
         }
-        
+
         @font-face {
             font-family: '$popis-regular';
             src: url('./fonts/Poppins-Regular.ttf');
@@ -137,31 +140,31 @@
         }
 
         .body {
-            margin: 0; 
-            padding: 0 !important; 
+            margin: 0;
+            padding: 0 !important;
             mso-line-height-rule: exactly;
         }
 
         .container {
-            width: 100%; 
+            width: 100%;
             background-color: #f1f4fa;
         }
-        
+
         .email-content {
-            max-width: 850px; 
+            max-width: 850px;
             margin: 0 auto;
         }
 
         .table {
-            margin: auto; 
+            margin: auto;
             background-color: #ffffff;
         }
 
         .button {
-            width: 100%; 
-            object-fit: cover; 
-            object-position: bottom; 
-            margin: 45px auto 0; 
+            width: 100%;
+            object-fit: cover;
+            object-position: bottom;
+            margin: 45px auto 0;
             display: flex;
         }
 
@@ -188,32 +191,45 @@
 <body width="100%" class="body">
     <center class="container">
         <div class="email-content">
-            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" class="table">
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                class="table">
                 <tr>
                     <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header" style="width: 100%; object-fit: cover; object-position: bottom;">
-                    </td>
-                </tr>
-                <tr >
-                    <td class="width-td">
-                        <center><h1 style="margin-top: 35px; line-height: 45px;">Olá, *|NOME|*</h1></center>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="width-td">
-                        <center><p style="margin-top: 30px; line-height: 45px;"><strong>Você sabia que o pagamento de sua matrícula ainda está pendente?</strong></p></center><br>
+                        <a href="https://auden.edu.br/index" target="_blank">
+                            <img src="../DEV/HEADER.png" alt="header"
+                                style="width: 100%; object-fit: cover; object-position: bottom;">
+                        </a>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
-                        <center><h2 style="line-height: 45px;">Faltam poucas horas para fecharmos este ciclo.</h2></center><br>
+                        <center>
+                            <h1 style="margin-top: 35px; line-height: 45px;">Olá, *|NOME|*</h1>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <p style="margin-top: 30px; line-height: 45px;"><strong>Você sabia que o pagamento de sua
+                                    matrícula ainda está pendente?</strong></p>
+                        </center><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="width-td">
+                        <center>
+                            <h2 style="line-height: 45px;">Faltam poucas horas para fecharmos este ciclo.</h2>
+                        </center><br>
                     </td>
                 </tr>
                 <tr>
                     <td class="width-td">
                         <center>
                             <p style="line-height: 45px;">
-                                Hoje é o último dia para você realizar o pagamento e garantir sua vaga na Pós–Graduação *|NOME_CURSO|* pela Faculdade AUDEN MFA, você não vai perder essa oportunidade, não é mesmo?                               
+                                Hoje é o último dia para você realizar o pagamento e garantir sua vaga na Pós–Graduação
+                                *|NOME_CURSO|* pela Faculdade AUDEN MFA, você não vai perder essa oportunidade, não é
+                                mesmo?
                             </p>
                         </center>
                     </td>
@@ -222,7 +238,9 @@
                     <td class="width-td">
                         <center>
                             <p style="margin-top: 12px; line-height: 45px;">
-                                Para facilitar o seu pagamento, disponibilizaremos o código do boleto a seguir. Assim, você poderá efetuar o pagamento pela plataforma de sua preferência. <br> *|CODIGO_BOLETO|*
+                                Para facilitar o seu pagamento, disponibilizaremos o código do boleto a seguir. Assim,
+                                você poderá efetuar o pagamento pela plataforma de sua preferência. <br>
+                                *|CODIGO_BOLETO|*
                             </p>
                         </center>
                     </td>
@@ -238,7 +256,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="../DEV/FOOTER.png" alt="footer" style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        <a href="https://linktr.ee/audenmfa" target="_blank">
+                            <img src="../DEV/FOOTER.png" alt="footer"
+                                style="width: 100%; object-fit: cover; object-position: bottom; margin-top: 35px; display: flex;">
+                        </a>
                     </td>
                 </tr>
             </table>
