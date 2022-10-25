@@ -100,44 +100,12 @@
     <!-- CSS Reset : END -->
 
     <style>
-        @font-face {
-            font-family: '$poppins-bold';
-            src: url('./fonts/Poppins-Bold.ttf');
-        }
-
-        @font-face {
-            font-family: '$popis-regular';
-            src: url('./fonts/Poppins-Regular.ttf');
-        }
-
-        .header {
-            position: relative;
-            display: flex;
-        }
-
-        p {
-            font-size: 20px;
-            font-family: '$popis-regular';
-        }
-
-        h1 {
-            font-size: 36px;
-            font-family: '$popis-regular';
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 24px;
-            font-family: '$poppins-bold';
-        }
-
-        h3 {
-            font-size: 40px;
-            font-family: '$popis-regular';
-        }
-
         .width-td {
-            padding: 0 50px;
+            position: relative;
+        }
+
+        .flex {
+            display: flex;
         }
 
         .width-td-button {
@@ -167,40 +135,26 @@
             background-color: #ffffff;
         }
 
-        .button {
-            background-color: #7f00ff;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            width: 80%;
-            height: 65px;
-            margin-top: 40px;
-            font-family: '$poppins-bold';
-            font-size: 20px;
+        a {
             display: flex;
-            justify-content: center;
-            align-items: center;
         }
 
-        @media only screen and (min-device-width: 250px) and (max-device-width: 319px) {
-            .button {
-                font-size: 16px;
-                width: 100%;
-            }
+        .elementExample {
+            width: 200px;
+            height: 150px;
+            line-height: 200px;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
         }
-
-        @media only screen and (min-device-width: 320px) and (max-device-width: 420px) {
-            .button {
-                font-size: 16px;
-                width: 100%;
-            }
+        .elementExample_first {
+            width: 100%;
         }
-
-        @media only screen and (min-device-width: 421px) and (max-device-width: 600px) {
-            .button {
-                font-size: 16px;
-                width: 100%;
-            }
+        .elementExample_last {
+            background-color: #C0392B;            
+            position: relative;
+            top: -200px;
         }
     </style>
 </head>
@@ -211,33 +165,40 @@
             <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
                 class="table">
                 <tr>
-                    <td class="header">
-                        <img src="../DEV/HEADER.png" alt="header"
+                    <td class="width-td flex">
+                        <img src="../DEV/header.png" alt="header"
                             style="width: 100.2%; object-fit: cover; object-position: bottom;" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="header">
+                    <td class="width-td flex">
                         <img src="../DEV/corpo.png" alt="header"
                             style="width: 100.2%; object-fit: cover; object-position: bottom;" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="header">
+                    <td class="width-td flex">
                         <img src="../DEV/infos.png" alt="header"
                             style="width: 100.2%; object-fit: cover; object-position: bottom;" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="header">
-                        <img src="../DEV/acoes.png" alt="header"
-                            style="width: 100.238%; object-fit: cover; object-position: bottom;" />
+                    <td class="width-td flex">
+                        <a href="https://auden.edu.br/" target="_blank">
+                            <img src="../DEV/acoes.png" alt="header"
+                                style="width: 100.238%; object-fit: cover; object-position: bottom;" />
+                        </a>
                     </td>
                 </tr>
                 <tr>
-                    <td class="header">
-                        <img src="../DEV/footer.png" alt="header"
+                    <td class="width-td">
+                        <div class="elementExample elementExample_first">
+                            <img src="../DEV/footer.png" alt="header"
                             style="width: 100%; object-fit: cover; object-position: bottom;" />
+                        </div>
+                        <div class="elementExample elementExample_last">
+                            Testes
+                        </div>
                     </td>
                 </tr>
             </table>
