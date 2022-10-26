@@ -139,17 +139,86 @@
             display: flex;
         }
 
-        .elementExample_first {
-            width: 107.5%;
+        .footer-content {
+            background-color:#f5f7fe; 
+            display: flex; 
+            width: 100%; 
+            padding: 3rem;
         }
 
-        .elementExample_last {
-            background-color: transparent;
-            position: relative;
-            right: 8rem;
-            height: 3rem;
-            top: 3.4rem;
-            width: 3.5rem;
+        .footer {
+            display: flex; 
+            width: 100%; 
+            background-color: #ffffff; 
+            border: 2px #c6c6c6 solid; 
+            border-radius: 16px;
+        }
+
+        .footer-message {
+            width: 70%; 
+            padding: 1.5rem 0 1.5rem 3rem;
+        }
+
+        .img-message {
+            width: 82%; 
+            object-fit: cover; 
+            object-position: bottom;
+        }
+
+        .footer-insta {
+            margin: auto; display: flex;
+        }
+
+        .img-insta {
+            width: 75%; object-fit: cover; object-position: bottom;
+        }
+
+        @media only screen and (min-device-width: 250px) and (max-device-width: 319px) {
+            .img-message {
+                width: 100%; 
+                object-fit: cover; 
+                object-position: bottom;
+            }
+
+            .footer-message {
+                width: 70%; 
+                padding: 1rem 0 1rem 1rem;
+            }
+
+            .img-insta {
+                width: 45%; 
+                object-fit: cover; 
+                object-position: bottom;
+                margin: auto;
+            }
+
+            .footer-content {
+                padding: 1.5rem 1.4rem 2rem 1.4rem;
+            }
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 420px) {
+            .img-message {
+                width: 100%; 
+                object-fit: cover; 
+                object-position: bottom;
+            }
+
+            .footer-message {
+                width: 70%; 
+                padding: 1rem 0 1rem 1rem;
+            }
+
+            .img-insta {
+                width: 60%; 
+                object-fit: cover; 
+                object-position: bottom;
+                margin: auto;
+            }
+
+            .footer-content {
+                padding: 1.5rem 1.4rem 2rem 1.4rem;
+            }
         }
     </style>
 </head>
@@ -179,7 +248,7 @@
                 </tr>
                 <tr>
                     <td class="width-td flex">
-                        <a href="https://auden.edu.br/" target="_blank">
+                        <a href="https://auden.edu.br/" target="_blank" class="flex">
                             <img src="../DEV/acoes.png" alt="acoes"
                                 style="width: 100.238%; object-fit: cover; object-position: bottom;" />
                         </a>
@@ -187,16 +256,20 @@
                 </tr>
                 <tr>
                     <td class="width-td flex">
-                        <a href="https://linktr.ee/audenmfa?fbclid=PAAabQ2YCePszIpB4wSoWjIvSQVOnDc7ynDlKEEusMqdFRouIyTTnSdFHIdpM"
-                            target="_blank">
-                            <div class="elementExample_first flex">
-                                <img src="../DEV/footer.png" alt="footer"
-                                    style="width: 107.5%; object-fit: cover; object-position: bottom;" />
+                        <div class="footer-content">
+                            <div class="footer">
+                                <div class="footer-message">
+                                    <a href="https://linktr.ee/audenmfa?fbclid=PAAabQ2YCePszIpB4wSoWjIvSQVOnDc7ynDlKEEusMqdFRouIyTTnSdFHIdpM" target="_blank">
+                                        <img src="../DEV/footer1.png" alt="footer" class="img-message" />
+                                    </a>
+                                </div>
+                                <div class="footer-insta">
+                                    <a href="https://instagram.com/audenmfa?igshid=YmMyMTA2M2Y=" target="_blank">
+                                        <img src="../DEV/IG.png" alt="IG" class="img-insta" />
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                        <a href="https://instagram.com/audenmfa?igshid=YmMyMTA2M2Y=" target="_blank">
-                            <div class="elementExample_last flex"></div>
-                        </a>
+                        </div>
                     </td>
                 </tr>
             </table>
